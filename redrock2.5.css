@@ -1,0 +1,432 @@
+.all {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  height:100%;
+}
+
+.Navigation_bar {
+  order: 0;
+  height: 81.44px;
+  background-color: #e5f5f4;
+}
+
+.Navigation_bar1 {
+  order: 1;
+  background-color: #2eab8e;
+  height: 48.86px;
+  display: flex;
+  flex-direction: row;
+}
+
+.picturef {
+  order: 2;
+  flex-grow: 0;
+  height: 449px;
+  width: 100%;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom {
+  order: 3;
+  height: 143.91px;
+  background-color: #0f6f5c;
+  text-align: center;
+}
+
+.navigation,
+.navigation1 {
+  width: 102px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  line-height: 48.86px;
+}
+
+.navigation {
+  margin: 0 0 0 220px;
+}
+
+.logof {
+  position: relative;
+  margin: 15px 0 0 220px;
+  height: 54px;
+  width: 95px;
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  left: -100px;
+  filter: drop-shadow(100px 0 0 #0b696f);
+}
+
+.p {
+  color: #a3a5a5;
+  font-size: 11px;
+  position: absolute;
+  left: 330px;
+  font-weight: 500;
+  bottom: 631px;
+}
+
+.triangle-down {
+  position: absolute;
+  left: 490px;
+  bottom: 657px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #999999;
+}
+
+.photo {
+  width: 500px;
+  height: 75px;
+  float: right;
+  float: top;
+}
+
+.hui {
+  display: inline;
+  color: #666666;
+  font-size: 12px;
+  line-height: 110px;
+}
+
+.cheng {
+  display: inline;
+  color: #f47c53;
+  font-size: 12px;
+}
+
+.jieshule {
+  position: absolute;
+  right: 253px;
+  bottom: 660px;
+  font-size: 8px;
+  color: #6e706f;
+  font-weight: 600;
+}
+
+.jieshulea {
+  background-position: -280px -155px;
+  position: relative;
+  bottom: 10px;
+  right: 45px;
+}
+
+.fun {
+  position: absolute;
+  left: 220px;
+  bottom: 200px;
+  z-index: 1;
+  height: 338px;
+  width: 412px;
+  background-color: #fff;
+}
+
+.funleft {
+  width: 102px;
+  height: 47px;
+  background-color: #84ccc9;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #0a6678;
+  line-height: 47px;
+  font-weight: 600;
+  border-left: 30px;
+}
+
+.funleft1 {
+  background-color: #84ccc9;
+  width: 102px;
+  border-right: 1px solid #0a6678;
+  height: 146px;
+  font-weight: 500;
+}
+
+.funleftf {
+  width: 103px;
+  height: 338px;
+  background-color: #fff;
+}
+
+.funright {
+  position: absolute;
+  width: 309px;
+  height: 338px;
+  top: -0.1px;
+  left: 103px;
+}
+
+.funright1 {
+  width: 80px;
+  height: 45px;
+  line-height: 45px;
+  color: #0a6678;
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  float: left;
+}
+
+.funright2 {
+  width: 80px;
+  height: 45px;
+  line-height: 45px;
+  color: #666666;
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  float: left;
+}
+
+.shukuai {
+  width: 14px;
+  height: 290px;
+  margin: 0;
+  position: relative;
+  top: 47px;
+}
+
+.rightfont {
+  position: relative;
+  left: 14px;
+  bottom: 245px;
+}
+
+.rightfont1 {
+  position: relative;
+  left: 14px;
+  bottom: 243px;
+}
+
+.rightfont2 {
+  position: relative;
+  left: 152px;
+  bottom: 265px;
+}
+
+.rightfont3 {
+  position: relative;
+  left: 14px;
+  bottom: 235px;
+}
+
+.rightfont4 {
+  position: relative;
+  left: 152px;
+  bottom: 258px;
+}
+
+.rightfont5 {
+  position: relative;
+  left: 14px;
+  bottom: 230px;
+}
+
+.rightfont6 {
+  position: relative;
+  left: 152px;
+  bottom: 253px;
+}
+
+.rightfont,
+.rightfont1,
+.rightfont2,
+.rightfont3,
+.rightfont4,
+.rightfont5,
+.rightfont6 {
+  color: #999999;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.line {
+  position: relative;
+  background-color: #0f6f5c;
+  width: 280px;
+  height: 2px;
+  margin: 0 auto;
+  top: 47px;
+}
+
+.shuru1 {
+  border: 1.5px solid #e6e6e6;
+  height: 22px;
+  width: 278px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.shuru2,
+.shuru3,
+.shuru4,
+.shuru5,
+.shuru6,
+.shuru7 {
+  border: 1.5px solid #e6e6e6;
+  height: 22px;
+  width: 108px;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.shuru1 {
+  left: 14px;
+  bottom: 250px;
+}
+
+.shuru2 {
+  left: 14px;
+  bottom: 185px;
+}
+
+.shuru3 {
+  left: 150px;
+  bottom: 185px;
+}
+
+.shuru4 {
+  left: 14px;
+  bottom: 132px;
+}
+
+.shuru5 {
+  left: 150px;
+  bottom: 132px;
+}
+.shuru6 {
+  left: 14px;
+  bottom: 80px;
+}
+.shuru7 {
+  left: 150px;
+  bottom: 80px;
+}
+
+.funright2 {
+  width: 80px;
+  height: 47px;
+  display: inline;
+  color: #666666;
+}
+
+.icon,
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.jieshulea {
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background-image: url(https://raw.githubusercontent.com/JHa0o0/rrJHa0o0/master/fc.png);
+  background-repeat: no-repeat;
+}
+
+.icon {
+  background-position: -280px -45px;
+  position: relative;
+  bottom: 326px;
+  left: 15px;
+}
+
+.icon1 {
+  background-position: -163px -44px;
+  position: relative;
+  bottom: 279px;
+  left: -15px;
+}
+
+.icon2 {
+  background-position: -47px -47px;
+  position: relative;
+  bottom: 231px;
+  left: -45px;
+}
+
+.icon3 {
+  background-position: -45px -162px;
+  position: relative;
+  bottom: 211px;
+  left: 14px;
+}
+
+.icon4 {
+  background-position: -155px -162px;
+  position: absolute;
+  left: 240px;
+}
+
+p.pp {
+  margin: 0 0 0 40px;
+  display: block;
+}
+
+.fontbottom1,
+.fontbottom {
+  font-size: 12px;
+  margin: 0px;
+  color: #dddddd;
+  line-height: 20px;
+}
+
+.fontbottom {
+  margin-top: 20px;
+}
+
+.Search_box {
+  width: 240px;
+  height: 24px;
+  position: relative;
+
+  float: left;
+  border: 0;
+}
+
+.search {
+  background-color: #2eab8e;
+  width: 34px;
+  height: 24;
+  border: 0;
+  float: left;
+}
+
+.Search_boxf {
+  position: absolute;
+  width: 274px;
+  height: 24px;
+  border-top: 1.5px solid #2eab8e;
+  border-bottom: 1.5px solid #2eab8e;
+  border-left: 2px solid #2eab8e;
+  border-right: 2px solid #2eab8e;
+  left: 330px;
+  top: 20px;
+  border-radius: 4px;
+}
+
+.navigation:hover,
+.navigation1:hover {
+  background-color: #0b696f;
+}
+
+.funleft:hover {
+  background-color: #2eab8e;
+  color: #0a6678;
+}
