@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style type="text/css">
+      #_main {
+        width: 240px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .namer {
+        text-align: center;
+      }
+      .contenter {
+        width: 230px;
+        height: 100px;
+        text-align: top;
+      }
+      .button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <title>xxx</title>
+  <body>
+    <div id="_main">
+      留言板<br />
+      昵称:<br />
+      <input type="text" class="namer" /><br />
+      留言:<br />
+      <textarea type="text" class="contenter"></textarea>
+      <button type="button" class="button">提交</button>
+    </div>
+    <script>
+      var namer = document.querySelector(".namer");
+      var contenter = document.querySelector(".contenter");
+      var _button = document.querySelector(".button");
+      var _main = document.querySelector("#_main");
+      var a = 0;
+      _button.onclick = function() {
+        a++;
+        var varsName = "kuai" + a;
+        var pName = namer.value+"说:";
+        if(namer.value==null){
+          pName="无名氏说:"
+        }
+        var pContent = contenter.value||"我什么也没说";
+        varsName = document.createElement("div");
+        _main.appendChild(varsName);
+        varsName.style.margin = "10px auto";
+        varsName.style.width = "230px";
+        varsName.style.height = "100px";
+        var _pName=document.createTextNode(pName);
+        varsName.appendChild(_pName);
+        var _pContent = document.createTextNode(pContent);
+        varsName.appendChild(_pContent);
+      };
+    </script>
+  </body>
+</html>

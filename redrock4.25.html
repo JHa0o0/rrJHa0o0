@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <style type="text/css">
+      .click {
+        position: fixed;
+        right: 20px;
+        top: 600px;
+        width: 50px;
+        height: 30px;
+        background-color: bisque;
+        text-align: center;
+        font-size: 15px;
+        line-height: 30px;
+        z-index: 0;
+      }
+      #body {
+        height: 500%;
+        margin: 0;
+      }
+      .cover {
+        position: absolute;
+        height: 500%;
+        width: 100%;
+        z-index: 0;
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <title>滔酱滔酱滔酱</title>
+  <body id="body">
+    <div class="cover"></div>
+    <div class="click">置顶</div>
+    <script>
+      var _click = document.querySelector(".click");
+      var timer = null;
+      var isTop = true;
+      window.onscroll = function() {
+        var _scrollTop =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var _height = window.innerHeight;
+        if (_scrollTop <= _height) {
+          _click.setAttribute("style", "z-index:-5");
+        } else {
+          _click.setAttribute("style", "z-index:5");
+        }
+        _click.onclick = function() {
+          timer = setInterval(function() {
+            var scrollTop =
+              document.body.scrollTop || document.documentElement.scrollTop;
+            var speed = Math.floor(-scrollTop / 6);
+            document.body.scrollTop = document.documentElement.scrollTop =
+              scrollTop + speed;
+              isTop=true;
+              if(scrollTop==0){
+                clearInterval(timer);
+              }
+          }, 30);
+        };
+      };
+    </script>
+  </body>
+</html>
