@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <style type="text/css">
+      #_main {
+        width: 240px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .namer {
+        text-align: center;
+      }
+      .contenter {
+        width: 230px;
+        height: 100px;
+        text-align: top;
+      }
+      .button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <title>xxx</title>
+  <body>
+    <div id="_main">
+      留言板<br />
+      昵称:<br />
+      <input type="text" class="namer" value="无名氏"><br />
+      留言:<br />
+      <textarea type="text" class="contenter"></textarea>
+      <button type="button" class="button">提交</button>
+    </div>
+    <script>
+      var namer = document.querySelector(".namer");
+      var contenter = document.querySelector(".contenter");
+      var _button = document.querySelector(".button");
+      var _main = document.querySelector("#_main");
+      var a = 0;
+      _button.onclick = function() {
+        var varsName;
+        var pName = namer.value+"说:";
+        if(namer.value==null){
+          pName="无名氏说:"
+        }
+        var pContent = contenter.value||"我什么也没说";
+        varsName = document.createElement("div");
+        _main.appendChild(varsName);
+        varsName.style.margin = "10px auto";
+        varsName.style.width = "250px";
+        varsName.style.height = "100px";
+        varsName.style.animation= "myfirst 1s";
+        varsName.style.position="relative";
+        varsName.style.background="#555555"
+        var _pName=document.createTextNode(pName);
+        varsName.appendChild(_pName);
+        var _pContent = document.createTextNode(pContent);
+        varsName.appendChild(_pContent);
+        var zan=document.createElement("button");
+        varsName.appendChild(zan);
+        var _zan = document.createTextNode("点赞(0)");
+        zan.appendChild(_zan);
+        zan.style.width="70px";
+        zan.style.height="30px";
+        zan.style.background="#fff";
+        zan.style.position="absolute";
+        zan.style.right="0";
+        zan.style.bottom="0";
+        var b = 0;
+        zan.onclick = function (){
+          b++;
+          _zan.replaceData(3,1,b);
+        }
+      };
+    </script>
+  </body>
+</html>
